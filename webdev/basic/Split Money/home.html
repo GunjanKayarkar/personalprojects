@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sopeonow Assignment</title>
+</head>
+<body>
+    <span class="toptext">
+        <h5>S P L I</h5>
+        <h5>T T E R</h5>
+    </span>
+
+    <div class="tip-calculator">
+        <form>
+          <div class="form-col">
+            <label for="bill">Bill</label>
+            <div class="input-group">
+              <span class="icon">
+                <img src="https://cdn.discordapp.com/attachments/776536140987498546/1021331970111840267/download.png" alt="" />
+              </span>
+              <input type="text" id="bill" name="bill" placeholder="0" />
+            </div>
+          </div>
+          <div class="form-col">
+            <label for="select-tip">Select Tip %</label>
+            <div class="tips-grid">
+              <label class="tip">
+                <input type="radio" name="tip" id="select-tip" value="5" />
+                <span class="tip-amount">5%</span>
+              </label>
+              <label class="tip">
+                <input type="radio" name="tip" id="select-tip" value="10" />
+                <span class="tip-amount">10%</span>
+              </label>
+              <label class="tip">
+                <input type="radio" name="tip" id="select-tip" value="15" />
+                <span class="tip-amount">15%</span>
+              </label>
+              <label class="tip">
+                <input type="radio" name="tip" id="select-tip" value="25" />
+                <span class="tip-amount">25%</span>
+              </label>
+              <label class="tip">
+                <input type="radio" name="tip" id="select-tip" value="50" />
+                <span class="tip-amount">50%</span>
+              </label>
+              <label class="tip tip-custom">
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  name="tip-custom"
+                  id="input-custom-tip"
+                  placeholder="Custom"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="form-col">
+            <label for="person-amount">Number of People</label>
+            <div class="input-group">
+              <span class="icon">
+                <img src="https://cdn.discordapp.com/attachments/776536140987498546/1021332859379777566/33308.png" alt="" />
+              </span>
+              <input
+                type="number"
+                id="person-amount"
+                name="person-amount"
+                placeholder="0"
+                min="0"
+                max="10"
+              />
+              <small class="invalid-feedback"></small>
+            </div>
+          </div>
+        </form>
+        <div class="result-container">
+          <div class="result-tip">
+            <p class="text">Tip Amount <br /><span class="per">/ person</span></p>
+            <span class="amount" id="person-tip-amount">$0</span>
+          </div>
+          <div class="result-tip">
+            <p class="text">Total <br /><span class="per">/ person</span></p>
+            <span class="amount" id="total">$0</span>
+          </div>
+          <button type="reset" id="reset">Reset</button>
+        </div>
+      </div>
+</body>
+</html>
