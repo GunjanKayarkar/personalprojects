@@ -1,0 +1,15 @@
+GUI :
+    Main page : Buttons page of maulik
+        Contacts Button : Opens second page showing all available contacts
+        Add Button : Opens up a form page which takes all info
+        Edit Button : It takes you to contacts screen and then you select one contact for edit.
+            This will open up same form page with filled information.
+        Groups button : Opens up a group page with only groups name, if clicked on any groups name
+            then show the available contacts in that group.
+
+OOPS :
+    1. Storage of Data : Either File I/O or DBMS
+    2. Contacts file : Add, Update, and Delete functionality will be here
+    3. Groups file :
+    4. Show Contact info file :
+    5. Call history :
