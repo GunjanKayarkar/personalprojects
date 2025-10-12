@@ -1,0 +1,51 @@
+#main{
+    text-align: center;
+    background-color: #EEEEEE;
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#bulletpts{
+    text-align: left;
+
+}
+
+  
+
+#title{
+    padding-top: 5px;
+    padding-bottom: 20px;
+
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+
+#img-div{
+    background-color:white;
+}
+
+#img-caption{
+    padding-top: 15px;
+    padding-bottom: 25px;
+    font-size: 1rem;
+}
+
+#tribute-info{
+
+    padding-top: 2.6em;
+    padding-left: 30.5em;
+    padding-right: 30.5em;
+    font-size: 1rem;
+}
+
+
+
+#quotetext{
+    text-align: left;
+}
