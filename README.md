@@ -1,4 +1,4 @@
-# kratinproject
+# medicine reminder
 # Daily Activity and Medicine Routine Web App
 
 Users will be able to add their daily routine like exercise, walk, or any other things they need to remember. At old age, memory related issues are quite common, while it is necessary to have a sense of routine in life to be able get through the day. Hence, this is where the web app can help the user in seamlessly getting through their day. The design has been kept simple and barebones in order to not overwhelm/confuse the user.
