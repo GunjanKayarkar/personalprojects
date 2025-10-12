@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<marquee><h1><u>CIRCULAR AREA CALCULATOR</h1></u></marquee>
+<hr>
+<h3> Just enter the radius of the circle, you will get the area</h3>
+<button onclick="carea()">Let's Start</button>
+<br><hr>
+<h3> Area of cirlce is: </h3> <h2><p id="result"></p> </h2>
+
+<script>
+function carea() 
+{
+  var x=prompt("Enter the radius of your circle");
+  text = x*x*Math.PI;
+  document.getElementById("result").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

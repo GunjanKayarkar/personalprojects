@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<title>Area of Circle</title>
+
+<body>
+
+<div id="alpha">
+
+<h2>Area of Circle Calculator</h2>
+<p>Enter the value of radius to get the area of the circle:</p>
+
+<p>
+  <input id="inputbox" type="text" placeholder="Enter Radius here" onchange="carea(value)" >
+</p>
+<p>Area of the circle is: <span id="resultarea"></span></p>
+
+<script>
+		function carea(x) 
+		{
+  		document.getElementById("resultarea").innerHTML=x*x*Math.PI;
+		}
+</script>
+
+</div>
+
+</body>
+
+<style> 
+		#inputbox
+		{ 
+		background-color:white; 
+		border: solid black 2px; 
+		width:200px;
+		} 
+
+		#alpha
+		{
+		width: 400px; 
+		margin: 0 auto;
+		}
+</style> 
+
+
+
+</html>
