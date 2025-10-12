@@ -1,0 +1,19 @@
+{% load static %}  
+
+{% block header %}
+{% include 'menucard/layout/navbar.html' %}
+{% endblock %}
+
+
+<div class="jumbotron">
+    <h1 class="display-4">Add new items to Menu (only for admins)</h1>
+    <p class="lead">
+        <form method="POST">
+            {% csrf_token %}
+            {{form}}
+            <input type="submit" class="btn-danger" name="submit">
+        
+        </form> </p>
+      <a class="btn btn-primary btn-lg" href="../order" role="button">Back to Menu</a>
+    </p>
+  </div>

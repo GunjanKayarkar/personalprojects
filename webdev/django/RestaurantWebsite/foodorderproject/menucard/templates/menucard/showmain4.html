@@ -1,0 +1,21 @@
+{% load static %}  
+
+
+{% block header %}
+{% include 'menucard/layout/navbar.html' %}
+{% endblock %}
+
+<div class="jumbotron">
+    <h1 class="display-4">Orders prepared: </h1>
+    <p class="lead">{% for lor in allorders %}
+        <br>
+        {{lor.ordernumber}}. {{lor.name}}'s order of {{lor.fooditem}} at {{lor.datetime}}
+        {% endfor %}</p>
+      <a class="btn btn-primary btn-lg" href="../main" role="button">Go to homepage</a>
+    </p>
+  </div>
+
+
+
+
+

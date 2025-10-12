@@ -1,0 +1,41 @@
+{% load static %}  
+
+
+{% block header %}
+{% include 'menucard/layout/navbar.html' %}
+{% endblock %}
+
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Dish id</th>
+        <th>Food Item</th>
+        <!--<th>Price</th>
+         <th>Buy</th> -->
+      </tr>
+    </thead>
+    
+    <tbody>
+    {% for sts in st %}
+      <tr>
+        <td>{{sts.id}}</td>
+        <td>{{sts.dish_name}}</td>
+        <td>{{sts.dish_price}}</td>
+        <td> <a href =  "{% url 'menucard:updateform' sts.id %}" > <button class="btn btn-danger btn-lg" > Update </button> </a> </td> 
+        <td> <a href =  "{% url 'menucard:deleteform' sts.id %}" > <button class="btn btn-danger btn-lg" > Delete </button> </a> </td>
+      </tr>
+      {% endfor %}
+      
+    </tbody>
+
+  </table>
+  <hr>
+
+   <a href="../order_form" class="btn btn-success btn-lg">Make order</a> <br><br>
+
+   <a href="../createform" class="btn btn-danger btn-lg">Add Menu items (only for Manager)</a>
+
+ 
+
+ 
